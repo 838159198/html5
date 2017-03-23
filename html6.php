@@ -16,12 +16,16 @@ class html6 extends L{
      * @author zhanglibin
      * @date 2017.2.27
      */
+function video(){
 
+    $this->display();
+}
     public function index(){
     	if( !isset($_SESSION['user']['userId'])){
             L::header(ROOT_URL . '/html6.php?a=contentList');
             exit;
         }
+
         L::header(ROOT_URL.'/html6.php?a=allContent');
     }
   
